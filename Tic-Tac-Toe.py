@@ -184,7 +184,14 @@ def check_for_tie():
 
 # Flip the current player from X to O, or O to X
 def flip_player():
-   pass
+   # Global variables we need
+    global current_player
+    # If the current player was X, make it O
+    if current_player == "X":
+        current_player = "O"
+    # Or if the current player was O, make it X
+    elif current_player == "O":
+        current_player = "X"
 
 
 # ------------ Start Execution -------------
