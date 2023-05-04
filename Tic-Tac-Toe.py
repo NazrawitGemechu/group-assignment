@@ -42,7 +42,11 @@ def play_game():
 
 # Display the game board to the screen
 def display_board():
-    pass
+    print("\n")
+    print(board[0] + " | " + board[1] + " | " + board[2] + "     1 | 2 | 3")
+    print(board[3] + " | " + board[4] + " | " + board[5] + "     4 | 5 | 6")
+    print(board[6] + " | " + board[7] + " | " + board[8] + "     7 | 8 | 9")
+    print("\n")
 
 
 # Handle a turn for an arbitrary player
@@ -52,7 +56,8 @@ def handle_turn(player):
 
 # Check if the game is over
 def check_if_game_over():
-    pass
+    check_for_winner()
+    check_for_tie()
 
 
 # Check to see if somebody has won
